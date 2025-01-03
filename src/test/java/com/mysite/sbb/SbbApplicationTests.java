@@ -105,7 +105,7 @@ class SbbApplicationTests {
         assertTrue(oq.isPresent());
         Question q = oq.get();
 
-        List<Answer> answersList = q.getAnswersList();
+        List<Answer> answersList = q.getAnswerList();
 
         assertEquals(1, answersList.size());
         assertEquals("네 자동으로 생성됩니다.", answersList.get(0).getContent());
