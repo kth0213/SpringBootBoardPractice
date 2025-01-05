@@ -1,5 +1,7 @@
-package com.mysite.sbb.answer;
+package sbb.answer;
 
+import com.mysite.sbb.answer.Answer;
+import com.mysite.sbb.answer.AnswerRepository;
 import com.mysite.sbb.question.Question;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

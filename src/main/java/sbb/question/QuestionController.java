@@ -1,7 +1,11 @@
-package com.mysite.sbb.question;
+package sbb.question;
 
-import java.util.List;
-
+import com.mysite.sbb.answer.AnswerForm;
+import com.mysite.sbb.question.Question;
+import com.mysite.sbb.question.QuestionForm;
+import com.mysite.sbb.question.QuestionService;
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -10,10 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.mysite.sbb.answer.AnswerForm;
-
-import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
+import java.util.List;
 
 @RequestMapping("/question")
 @RequiredArgsConstructor
